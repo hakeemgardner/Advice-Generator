@@ -86,8 +86,13 @@ h3 {
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  position: sticky;
-  left: 615px;
+  position: absolute;
+  transform: translateX(13.1rem);
+  margin-top: 45px;
+  /* transform: translateY(0.5rem); */
+}
+.dice-border:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
@@ -102,5 +107,15 @@ h3 {
   .dice-border {
     left: 165px;
     top: 575px;
+  }
+  .dice-border {
+    transform: translateX(7rem);
+    margin-top: 6px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .dice-border {
+    transform: translateX(0.2rem);
+    margin-top: 6px;
   }
 }
